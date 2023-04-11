@@ -24,3 +24,9 @@ a:hover{
 .grid-item-1, .grid-item-2, .grid-item-3{
     border: 2px solid black;
 }
+footer{
+    background-color: #c9d2d0;
+}
+.footer{
+    color: #31231e;
+}

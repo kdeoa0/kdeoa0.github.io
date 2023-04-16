@@ -2,14 +2,19 @@
 <html>
 <head>
     <title>Diario El Faro</title>
+    <link rel="stylesheet" href="css/rainbow.css" >
+    <script src="java/main.js"></script>
+    
     <style>
 
     </style>
-    <link rel="stylesheet" href="css/rainbow.css" >
+    
 </head>
 <body>
     <header>
         <h1>Diario Faro</h1>
+        <div id="clock"></div>
+
     </header>
     
     <div style = "position:absolute; right:0px; top:0px;">
@@ -42,11 +47,18 @@
     <img src="images/apple.png" width="300" >
     <br>
     <!--noticias 3-->
-    <div class="grid-item grid-item-2">
+    <div class="grid-item grid-item-3">
         <h2 class="Text">Las ventas de vehículos eléctricos siguen aumentando en todo el mundo</h2>
         <h3 class="Text">Categoria: Medio ambiente</h3></th>
         <h4 class="Text">Las ventas de vehículos eléctricos han seguido aumentando en todo el mundo, según un informe reciente. En el último año, se vendieron más de 3 millones de vehículos eléctricos en todo el mundo, lo que representa un aumento del 43% con respecto al año anterior. Los expertos dicen que este aumento en las ventas de vehículos eléctricos es una buena noticia para el medio ambiente, ya que los vehículos eléctricos son mucho más limpios y más eficientes en términos de combustible que los vehículos convencionales.</h4>
     </div>
+    <!--noticias 4-->
+    <div class="grid-item grid-item-4">
+        <h2 class="Text" id="parafo"></h2>
+        <h3 class="Text" id="manzana"></h3></th>
+        <h4 class="Text"></h4>
+    </div>
+
     <img src="images/auto.jpg" width="300" >
     <br>
     <video height="540" autoplay controls>
@@ -55,8 +67,36 @@
     <audio controls>
         <source src="music/FIgaro.mp3" type="audio/mpeg ">
     </audio>
-    
-    
+    <br>
+        <!--formulario1-->
+    <h1>Formulario articulo</h1>
+    <label for="titulo">Titulo</label>
+    <label for="articulo">Articulo</label>
+
+
+    <input type="text" id="titulo">
+    <input type="text" id="articuloo">
+    <br>
+    <input type="radio" id="radio1" name="ñandu">
+    <label for="radio1">Main</label>
+    <br>
+    <input type="radio" id="radio2" name="ñandu">
+    <label for="radio2">Negocio</label>
+    <br>
+    <input type="radio" id="radio3" name="ñandu">
+    <label for="radio3">Deporte</label>
+    <br>
+    <input type="button" id="boton1" onclick="articulo()"  value="Press"> 
+    <!--formulario2-->
+    <br>
+    <h1>Formulario contacto</h1>
+    <label for="nombre">Nombre</label>
+    <label for="mensaje">Mensaje</label>
+
+    <input type="text" id="nombre">
+    <input type="text" id="mensaje">
+
+    <input type="button" id="boton2" value="Press" onclick="contacto()"> 
 </body>
 <footer>
     <h1 class="footer">Footer</h1>

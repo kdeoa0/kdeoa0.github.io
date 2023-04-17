@@ -13,8 +13,9 @@
 <body>
     <header>
         <h1>Diario Faro</h1>
-        <div id="clock"></div>
-
+        <div id="clock">00:00:00</div>
+        <br>
+        <div id="perron">cantidad de articulos: 0</div>
     </header>
     
     <div style = "position:absolute; right:0px; top:0px;">
@@ -29,64 +30,24 @@
     </h2>
     
     </div>
-    <!--noticias 1-->
-    <div class="grid-item grid-item-1">
-        <h2 class="Text">Nuevo estudio sugiere que el ejercicio reduce el riesgo de enfermedades mentales</h2>
-        <h3 class="Text">Categoria: Salud</h3></th>
-        <h4 class="Text">Un estudio reciente ha encontrado que el ejercicio regular puede ayudar a reducir el riesgo de enfermedades mentales como la depresión y la ansiedad. El estudio, que se llevó a cabo en un grupo de adultos jóvenes, mostró que aquellos que hacían ejercicio regularmente tenían menos probabilidades de experimentar síntomas de enfermedades mentales en comparación con aquellos que no hacían ejercicio. Los expertos dicen que estos hallazgos subrayan la importancia de mantenerse activo para una buena salud mental.</h4>
+    <!--noticias 3-->
+    <div class="grid-item grid-item-3" id="gridepica">
+
     </div>
 
-    <img src="images/mente.png" width="300" >
-    <br>
-    <!--noticias 2-->
-    <div class="grid-item grid-item-2">
-        <h2 class="Text">Apple anuncia nuevos productos en su último evento de lanzamiento</h2>
-        <h3 class="Text">Categoria: Tecnología</h3></th>
-        <h4 class="Text">Apple ha anunciado una serie de nuevos productos en su último evento de lanzamiento, incluyendo el iPhone 14 y el nuevo iPad Pro. Además de los nuevos dispositivos, Apple también presentó actualizaciones en su software, incluyendo nuevas características para sus sistemas operativos iOS y MacOS. Los expertos dicen que estos lanzamientos podrían tener un gran impacto en el mercado de la tecnología, especialmente en el segmento de los teléfonos inteligentes.</h4>
-    </div>
-    <img src="images/apple.png" width="300" >
-    <br>
-    <!--noticias 3-->
-    <div class="grid-item grid-item-3">
-        <h2 class="Text">Las ventas de vehículos eléctricos siguen aumentando en todo el mundo</h2>
-        <h3 class="Text">Categoria: Medio ambiente</h3></th>
-        <h4 class="Text">Las ventas de vehículos eléctricos han seguido aumentando en todo el mundo, según un informe reciente. En el último año, se vendieron más de 3 millones de vehículos eléctricos en todo el mundo, lo que representa un aumento del 43% con respecto al año anterior. Los expertos dicen que este aumento en las ventas de vehículos eléctricos es una buena noticia para el medio ambiente, ya que los vehículos eléctricos son mucho más limpios y más eficientes en términos de combustible que los vehículos convencionales.</h4>
-    </div>
-    <!--noticias 4-->
-    <div class="grid-item grid-item-4">
-        <h2 class="Text" id="parafo"></h2>
-        <h3 class="Text" id="manzana"></h3></th>
-        <h4 class="Text"></h4>
-    </div>
 
     <img src="images/auto.jpg" width="300" >
-    <br>
-    <video height="540" autoplay controls>
-        <source src="video/rickroll.mp4" type="video/mp4">
-    </video>
-    <audio controls>
-        <source src="music/FIgaro.mp3" type="audio/mpeg ">
-    </audio>
-    <br>
+
         <!--formulario1-->
     <h1>Formulario articulo</h1>
     <label for="titulo">Titulo</label>
-    <label for="articulo">Articulo</label>
 
 
     <input type="text" id="titulo">
+    <label for="articuloo">Cuerpo</label>
     <input type="text" id="articuloo">
     <br>
-    <input type="radio" id="radio1" name="ñandu">
-    <label for="radio1">Main</label>
-    <br>
-    <input type="radio" id="radio2" name="ñandu">
-    <label for="radio2">Negocio</label>
-    <br>
-    <input type="radio" id="radio3" name="ñandu">
-    <label for="radio3">Deporte</label>
-    <br>
-    <input type="button" id="boton1" onclick="articulo()"  value="Press"> 
+    <input type="button" id="boton4" onclick="vida()"  value="Press"> 
     <!--formulario2-->
     <br>
     <h1>Formulario contacto</h1>
@@ -97,6 +58,16 @@
     <input type="text" id="mensaje">
 
     <input type="button" id="boton2" value="Press" onclick="contacto()"> 
+    <br>
+    <br>
+    <br>
+    <video height="540" autoplay controls>
+        <source src="video/rickroll.mp4" type="video/mp4">
+    </video>
+    <audio controls>
+        <source src="music/FIgaro.mp3" type="audio/mpeg ">
+    </audio>
+    <br>
 </body>
 <footer>
     <h1 class="footer">Footer</h1>

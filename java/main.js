@@ -11,57 +11,54 @@ function reloj() {
 }
 setInterval(reloj, 1000);
 
-var Elboton = document.getElementById("boton1");
-
-function countarticle(){
-    
-}
 
 
 
 
-function articulo(){
-var radione =getElementById("radio1");
-var radiotwo =getElementById("radio2");
-var radiothree =getElementById("radio3");
-if (radione =false){
 
-    var pepe = document.getElementById("titulo");
-    var pepa = document.getElementById("articuloo");
-    var pepi = document.getElementById("parafo")
-    var pepo = document.getElementById("manzana")
-    
-    pepi.innerHTML = "parafo" + pepe.value;
-    pepo.innerHTML = "manzana" + pepa.value;
-    pepe.value="";
-    pepa.value="";
 
-}else if(radiotwo =false){
 
-    var pepe = document.getElementById("titulo");
-    var pepa = document.getElementById("articuloo");
-    var pepi = document.getElementById("nego")
-    var pepo = document.getElementById("cio")
-    
-    pepi.innerHTML = "nego" + pepe.value;
-    pepo.innerHTML = "cio" + pepa.value;
-    pepe.value="";
-    pepa.value="";
+let contador=0;
+function vida(){
+contador++;
+var conta= "cantidad de articulos: "+contador;
+var pepi = document.getElementById("titulo").value;
+var pepo = document.getElementById("articuloo").value;
+var grid = document.getElementById("gridepica");
+var elemento = document.createElement("div");
+var elemento2 = document.createElement("div");
+var elemento3 = document.createElement("div");
+elemento2.style.gridRow = 2;
 
-}else if(radiothree =false){
-
-    var pepe = document.getElementById("titulo");
-    var pepa = document.getElementById("articuloo");
-    var pepi = document.getElementById("depo")
-    var pepo = document.getElementById("rte")
-    
-    pepi.innerHTML = "depo" + pepe.value;
-    pepo.innerHTML = "rte" + pepa.value;
-    pepe.value="";
-    pepa.value="";
+elemento.textContent="Titulo: "+pepi;
+elemento2.textContent="Cuerpo: "+pepo;
+elemento3.textContent="<!--  -->";
+elemento.style.gridRow = "1";
+elemento2.style.gridRow = "2";
+elemento3.style.gridRow = "3";
+grid.appendChild(elemento);
+grid.appendChild(elemento2);
+grid.appendChild(elemento3);
+document.getElementById("perron").innerHTML = conta;
+document.getElementById("titulo").value="";
+document.getElementById("articuloo").value="";
 
 }
-}
+
+
+
+let caja=[];
+
+var listado = document.getElementById('listado');
+var item = document.createElement('li');
+item.appendChild(document.createTextNode(pepi));
+listado.appendChild(item);
+
+
+
+
+
+
 
 
 
@@ -75,6 +72,7 @@ if (radione =false){
 function contacto(){
     var sapo = document.getElementById("nombre");
     var sapa = document.getElementById("mensaje");
+    //nobody is going to read the this!!!
     sapo.value="";
     sapa.value="";
     alert("enviado")

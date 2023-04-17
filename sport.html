@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Diario El Faro: Deporte</title>
-    <style>
-        table{
-            border: 2px solid black;
-        }
-    </style>
+    <title>Diario El Faro</title>
     <link rel="stylesheet" href="css/rainbow.css" >
+    <script src="java/main.js"></script>
+    
+    <style>
+
+    </style>
+    
 </head>
 <body>
     <header>
-        <h1>Deporte</h1>
+        <h1>Deportes</h1>
+        <div id="clock">00:00:00</div>
+        <br>
+        <div id="perron">cantidad de articulos: 0</div>
     </header>
-        <!--Logo-->
+    
     <div style = "position:absolute; right:0px; top:0px;">
-        <img src="images/MainLogo.png" width="100" >
-        </div>
-        <hr>
-        <!--indicador-->
-        <h2>    
+    <img src="images/MainLogo.png" width="100" >
+    </div>
+     
+    <hr>
+    <h2>    
             <a href="index.html">Inicio</a> 
-        <br><a href="negocio.html">Negocio</a>
-        </h2>
-    <!--noticias 1-->
-    <div class="grid-item grid-item-1">
-        <h2 class="Text">La selección argentina de fútbol gana la Copa América 2021</h2>
-        <h3 class="Text">Categoria: Fútbol</h3></th>
-        <h4 class="Text">La selección argentina de fútbol ganó la Copa América 2021 tras vencer en la final a Brasil por 1-0. El gol de Ángel Di María en el primer tiempo le dio a Argentina su primer título de la Copa América desde 1993. La victoria fue celebrada por los aficionados de todo el mundo y se considera un gran logro para el equipo argentino.</h4>
+        <br><a href="negocio.html">Negocios</a>
+    </h2>
+    
     </div>
-        <img src="images/messi.jpg" width="300" >
-    <!--noticias 2-->
-    <div class="grid-item grid-item-2">
-        <h2 class="Text">Simone Biles regresa a las competencias en los Juegos Olímpicos de Tokio</h2>
-        <h3 class="Text">Categoria: Gimnasia</h3></th>
-        <h4 class="Text">La gimnasta estadounidense Simone Biles regresó a las competencias en los Juegos Olímpicos de Tokio después de retirarse temporalmente debido a problemas de salud mental. Biles regresó para competir en la final de barra de equilibrio, donde ganó la medalla de bronce. Su regreso fue aclamado por los aficionados y los expertos de todo el mundo, quienes elogiaron su valentía y su dedicación a la gimnasia.</h4>
-    </div>
-        <img src="images/simone.jpg" width="300" >
     <!--noticias 3-->
-    <div class="grid-item grid-item-3">
-        <h2 class="Text">Naomi Osaka gana el Abierto de Australia de tenis</h2>
-        <h3 class="Text">Categoria: Tenis</h3></th>
-        <h4 class="Text">La tenista japonesa Naomi Osaka ganó el Abierto de Australia 2021, derrotando a Jennifer Brady en la final. Osaka, que ya había ganado el Abierto de Estados Unidos en 2018 y 2020, se convirtió en la primera mujer desde 2001 en ganar sus primeros cuatro títulos de Grand Slam. Su victoria fue celebrada por los aficionados del tenis y se considera un gran logro para la joven tenista japonesa.</h4>
+    <div class="grid-item grid-item-3" id="gridepica">
+
     </div>
 
-    <img src="images/tenis.jpg" width="300" >
+
+    <img src="images/auto.jpg" width="300" >
+
+        <!--formulario1-->
+    <h1>Formulario articulo</h1>
+    <label for="titulo">Titulo</label>
+
+
+    <input type="text" id="titulo">
+    <label for="articuloo">Cuerpo</label>
+    <input type="text" id="articuloo">
     <br>
-    <!--noticias 4-->
-    <div class="grid-item grid-item-4">
-        <h2 class="Text" id="depo"></h2>
-        <h3 class="Text" id="rte"></h3></th>
-        <h4 class="Text"></h4>
-    </div>
+    <input type="button" id="boton4" onclick="vida()"  value="Press"> 
+    <!--formulario2-->
+    <br>
+    <h1>Formulario contacto</h1>
+    <label for="nombre">Nombre</label>
+    <label for="mensaje">Mensaje</label>
+
+    <input type="text" id="nombre">
+    <input type="text" id="mensaje">
+
+    <input type="button" id="boton2" value="Press" onclick="contacto()"> 
+    <br>
+    <br>
+    <br>
+    <video height="540" autoplay controls>
+        <source src="video/rickroll.mp4" type="video/mp4">
+    </video>
+    <audio controls>
+        <source src="music/FIgaro.mp3" type="audio/mpeg ">
+    </audio>
+    <br>
 </body>
 <footer>
     <h1 class="footer">Footer</h1>

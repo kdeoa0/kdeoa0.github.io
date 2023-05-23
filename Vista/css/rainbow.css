@@ -3,6 +3,7 @@ body, header, #clock{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #clock{
+    border-radius: 3px;
     border: 2px solid black;
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
 
@@ -10,10 +11,12 @@ body, header, #clock{
 
 
 .grid-item-3 {
+    border-radius: 3px;
     border: 2px solid white;
     background-color: white;
 }
 .grid-item-3:hover{
+    border-radius: 3px;
     border: 2px solid white;
     color: rgb(0, 0, 0);
     -webkit-filter: invert(100%);
@@ -40,21 +43,26 @@ a:hover{
 
 
 #formu{
+    border-radius: 3px;
     width: fit-content;
     border: 2px solid black;
     background-color: aqua;
 }
 #formu3{
+    border-radius: 3px;
     width: fit-content;
     border: 2px solid black;
     background-color: royalblue;
 }
 #formu4{
+    border-radius: 3px;
     width: fit-content;
+    padding: 2px;
     border: 2px solid black;
     background-color: lightgray;
 }
 #formus{
+    border-radius: 3px;
     width: fit-content;
     border: 2px solid  violet;
     background-image:  linear-gradient(to left,yellow, orange, red)
@@ -65,23 +73,50 @@ a:hover{
 }
 
 .nuevo{
+    border-radius: 3px;
     border: 2px solid black;
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
 }
 #old-article{
+    border-radius: 3px;
     height: 100px;
-    width: 100px;
+    width: 110px;
     border: 2px solid black;
     overflow: auto;
 }
 
 
 .grid-item-2{
+    border-radius: 3px;
     border-top: 3px solid black;
     border-bottom: 7px solid white;
 }
 
 .cuerpo{
+    border-radius: 3px;
     border-bottom: 15px solid white;
 }
 
+.formulario{
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 3px;
+    width: 300px;
+    border: 5px solid chocolate;
+}
+
+.Saviso{
+    background-color: aquamarine;
+    padding: 3px;
+    border-radius: 3px;
+    border: 3px solid cornflowerblue;
+}
+
+.Aviso{
+    background-color: rgb(117, 222, 115);
+    border-radius: 3px;
+    border: 4px solid rgb(247, 82, 109);
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 5px ;
+}
